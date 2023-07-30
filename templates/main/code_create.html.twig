@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Получения ссылки по коду{{ parent() }}{% endblock %}
+
+{% block content %}
+
+    </div>
+    <section class="short_form">
+        <form action="{{ path('URL decode') }}" method="get">
+            <div class="mb-3 form-check">
+                <label class="form-check-label" for="exampleCheck1">
+                    Code для получения ссылки:
+                    <input type="text" class="form-control" name="code" id="code_short" aria-describedby="emailHelp">
+                </label>
+                <button type="submit" class="btn btn-primary ">Найти</button>
+
+                </div>
+
+        </form>
+    </section>
+    </div>
+
+
+
+{% endblock %}
